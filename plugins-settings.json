@@ -1,4 +1,18 @@
 {
+    "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
+        "id": "b6255096-c963-456c-bd52-164193ed3f07",
+        "name": "Supabase",
+        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
+        "pluginId": "f9ef41c3-1c53-4857-855b-f2f6a40b7186",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
+            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
+            "realtimeTables": {
+                "messages": true,
+                "conversations": true
+            }
+        }
+    },
     "60610cfd-fa28-4fc1-9e72-088b5c667e81": {
         "id": "e08f507c-58b9-4abf-9434-c2df93a2506c",
         "name": "Calendly",
@@ -6,26 +20,14 @@
         "pluginId": "60610cfd-fa28-4fc1-9e72-088b5c667e81",
         "publicData": {}
     },
-    "f5856798-485d-47be-b433-d43d771c64e1": {
-        "id": "b8e03637-52a7-4393-96b3-b1fe71affcfb",
-        "name": "Xano Auth",
+    "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
+        "id": "b76f69a6-6967-438d-b82c-acce5629f023",
+        "name": "Supabase Auth",
         "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
-        "pluginId": "f5856798-485d-47be-b433-d43d771c64e1",
+        "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
         "publicData": {
-            "domain": "x8ki-letl-twmt.n7.xano.io",
-            "customDomain": "x8ki-letl-twmt.n7.xano.io",
-            "getMeEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:BocW3CX9/auth/me",
-            "loginEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:BocW3CX9/auth/login",
-            "signupEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:BocW3CX9/auth/signup",
-            "socialProviders": {
-                "google-oauth": {
-                    "id": 275308,
-                    "api": "https://x8ki-letl-twmt.n7.xano.io/api:4p-XhYT5",
-                    "name": "google-oauth"
-                }
-            },
-            "afterForbiddenPageId": "2e217622-f566-4ab9-83a0-05b6a774c962",
-            "afterNotSignInPageId": "2e217622-f566-4ab9-83a0-05b6a774c962"
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
+            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co"
         }
     }
 }

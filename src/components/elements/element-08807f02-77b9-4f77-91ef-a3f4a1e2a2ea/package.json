@@ -1,0 +1,1 @@
+{"name":"rich-text-mentions","version":"1.0.1","scripts":{"build":"weweb build","serve":"weweb serve"},"dependencies":{"@tiptap/core":"^2.1.12","@tiptap/extension-placeholder":"^2.1.12","@tiptap/pm":"^2.1.12","@tiptap/starter-kit":"^2.1.12"},"devDependencies":{}}
