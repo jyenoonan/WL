@@ -1,0 +1,1 @@
+{"name":"n8n-visualizer-weweb","version":"1.0.1","private":true,"scripts":{"build":"weweb build","serve":"weweb serve"},"dependencies":{"vue":"^3.2.37"},"devDependencies":{}}

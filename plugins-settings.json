@@ -1,18 +1,4 @@
 {
-    "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
-        "id": "b6255096-c963-456c-bd52-164193ed3f07",
-        "name": "Supabase",
-        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
-        "pluginId": "f9ef41c3-1c53-4857-855b-f2f6a40b7186",
-        "publicData": {
-            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
-            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
-            "realtimeTables": {
-                "messages": true,
-                "conversations": true
-            }
-        }
-    },
     "60610cfd-fa28-4fc1-9e72-088b5c667e81": {
         "id": "e08f507c-58b9-4abf-9434-c2df93a2506c",
         "name": "Calendly",
@@ -36,5 +22,19 @@
         "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
         "pluginId": "2bd1c688-31c5-443e-ae25-59aa5b6431fb",
         "publicData": {}
+    },
+    "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
+        "id": "b6255096-c963-456c-bd52-164193ed3f07",
+        "name": "Supabase",
+        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
+        "pluginId": "f9ef41c3-1c53-4857-855b-f2f6a40b7186",
+        "publicData": {
+            "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
+            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
+            "realtimeTables": {
+                "messages": true,
+                "conversations": true
+            }
+        }
     }
 }

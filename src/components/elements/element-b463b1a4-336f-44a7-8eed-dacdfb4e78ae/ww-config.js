@@ -1,0 +1,93 @@
+export default {
+  editor: {
+    label: {
+      en: 'Stats Card',
+    },
+    icon: 'credit-card',
+  },
+  properties: {
+    title: {
+      label: { en: 'Title' },
+      type: 'Text',
+      section: 'settings',
+      bindable: true,
+      defaultValue: 'Total Executions',
+    },
+    value: {
+      label: { en: 'Value' },
+      type: 'Number',
+      section: 'settings',
+      bindable: true,
+      defaultValue: 2450,
+    },
+    icon: {
+      label: { en: 'Icon' },
+      type: 'Icon',
+      section: 'settings',
+      defaultValue: 'fas fa-bolt-lightning',
+    },
+    trend: {
+      label: { en: 'Trend (%)' },
+      type: 'Number',
+      section: 'settings',
+      bindable: true,
+      defaultValue: 15.2,
+    },
+    trendLabel: {
+      label: { en: 'Trend Label' },
+      type: 'Text',
+      section: 'settings',
+      bindable: true,
+      defaultValue: 'vs last month',
+    },
+    backgroundColor: {
+      label: { en: 'Background Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#1e293b',
+    },
+    iconBackgroundColor: {
+      label: { en: 'Icon Background Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#3b82f6',
+    },
+    iconColor: {
+      label: { en: 'Icon Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#ffffff',
+    },
+    titleColor: {
+      label: { en: 'Title Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#94a3b8',
+    },
+    valueColor: {
+      label: { en: 'Value Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#f1f5f9',
+    },
+    trendUpColor: {
+      label: { en: 'Trend Up Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#22c55e',
+    },
+    trendDownColor: {
+      label: { en: 'Trend Down Color' },
+      type: 'Color',
+      section: 'style',
+      bindable: true,
+      defaultValue: '#ef4444',
+    },
+  },
+};
