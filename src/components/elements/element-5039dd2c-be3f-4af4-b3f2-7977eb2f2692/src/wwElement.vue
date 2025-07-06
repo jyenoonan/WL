@@ -85,7 +85,7 @@ export default {
 
     const inputStyle = computed(() => {
       // Use fontSize from props, or default to 14
-      const size = props.content.fontSize || 14;
+      const size = props.content.fontSize || 8;
       return {
         fontSize: `${size}px`,
       };

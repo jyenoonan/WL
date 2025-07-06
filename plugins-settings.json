@@ -33,7 +33,8 @@
             "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
             "realtimeTables": {
                 "messages": true,
-                "conversations": true
+                "conversations": true,
+                "Custom_UI_Variables": true
             }
         }
     }
