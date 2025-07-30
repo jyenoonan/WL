@@ -13,7 +13,12 @@
         "pluginId": "1fa0dd68-5069-436c-9a7d-3b54c340f1fa",
         "publicData": {
             "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
-            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co"
+            "roleTable": "roles",
+            "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
+            "userRoleTable": "users_roles",
+            "roleTableNameColumn": "name",
+            "userRoleTableRoleColumn": "role_id",
+            "userRoleTableUserColumn": "user_id"
         }
     },
     "2bd1c688-31c5-443e-ae25-59aa5b6431fb": {
