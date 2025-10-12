@@ -6,6 +6,13 @@
         "pluginId": "60610cfd-fa28-4fc1-9e72-088b5c667e81",
         "publicData": {}
     },
+    "2bd1c688-31c5-443e-ae25-59aa5b6431fb": {
+        "id": "8b42e8c8-6627-4601-9dc3-d202ac820e1b",
+        "name": "REST API",
+        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
+        "pluginId": "2bd1c688-31c5-443e-ae25-59aa5b6431fb",
+        "publicData": {}
+    },
     "1fa0dd68-5069-436c-9a7d-3b54c340f1fa": {
         "id": "b76f69a6-6967-438d-b82c-acce5629f023",
         "name": "Supabase Auth",
@@ -17,16 +24,11 @@
             "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
             "userRoleTable": "users_roles",
             "roleTableNameColumn": "name",
+            "afterForbiddenPageId": "d78a8414-d73d-4faf-af2c-c6c2b58e6456",
+            "afterNotSignInPageId": "d78a8414-d73d-4faf-af2c-c6c2b58e6456",
             "userRoleTableRoleColumn": "role_id",
             "userRoleTableUserColumn": "user_id"
         }
-    },
-    "2bd1c688-31c5-443e-ae25-59aa5b6431fb": {
-        "id": "8b42e8c8-6627-4601-9dc3-d202ac820e1b",
-        "name": "REST API",
-        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
-        "pluginId": "2bd1c688-31c5-443e-ae25-59aa5b6431fb",
-        "publicData": {}
     },
     "f9ef41c3-1c53-4857-855b-f2f6a40b7186": {
         "id": "b6255096-c963-456c-bd52-164193ed3f07",
