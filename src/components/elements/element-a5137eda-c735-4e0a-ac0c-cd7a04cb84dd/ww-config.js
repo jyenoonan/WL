@@ -1,125 +1,226 @@
 export default {
   editor: {
     label: {
-      en: 'Bar Chart',
+      en: 'Gemini Chat UI'
     },
-    icon: 'bar-chart-2',
+    icon: 'message-circle'
   },
-  properties: {
-    title: {
-      label: { en: 'Title' },
-      type: 'Text',
-      section: 'settings',
-      bindable: true,
-      defaultValue: 'Monthly Workflows',
+  triggerEvents: [{
+    name: 'message-sent',
+    label: {
+      en: 'On message sent'
     },
-    data: {
-      label: { en: 'Data' },
+    event: {
+      message: {},
+      text: '',
+      attachments: []
+    }
+  }, {
+    name: 'message-received',
+    label: {
+      en: 'On message received'
+    },
+    event: {
+      message: {}
+    }
+  }, {
+    name: 'attachment-clicked',
+    label: {
+      en: 'On attachment click'
+    },
+    event: {
+      attachment: {}
+    }
+  }, {
+    name: 'pending-attachment-clicked',
+    label: {
+      en: 'On pending attachment click'
+    },
+    event: {
+      attachment: {}
+    }
+  }, {
+    name: 'message-right-click',
+    label: {
+      en: 'On message right click'
+    },
+    event: {
+      message: {},
+      x: 0,
+      y: 0
+    }
+  }],
+  properties: {
+    messages: {
+      label: {
+        en: 'Messages'
+      },
       type: 'Array',
       section: 'settings',
+      defaultValue: [],
       bindable: true,
-      defaultValue: [
-        { "label": "Jan", "value": 65 },
-        { "label": "Feb", "value": 59 },
-        { "label": "Mar", "value": 80 },
-        { "label": "Apr", "value": 81 },
-        { "label": "May", "value": 56 },
-        { "label": "Jun", "value": 55 }
-      ],
       options: {
-        expandable: true,
-        getItemLabel: (item, index) => item.label || `Item ${index + 1}`,
         item: {
           type: 'Object',
-          defaultValue: { label: 'Label', value: 50 },
-        },
+          defaultValue: {
+            id: '',
+            content: '',
+            role: 'user',
+            timestamp: '',
+            attachments: []
+          }
+        }
+      }
+    },
+    isStreaming: {
+      label: {
+        en: 'Is streaming'
       },
+      type: 'OnOff',
+      section: 'settings',
+      defaultValue: false,
+      bindable: true
     },
-    labelField: {
-        label: { en: 'Label Field' },
-        type: 'ObjectPropertyPath',
-        options: content => ({ object: content.data?.[0] || {} }),
-        defaultValue: 'label',
-    },
-    valueField: {
-        label: { en: 'Value Field' },
-        type: 'ObjectPropertyPath',
-        options: content => ({ object: content.data?.[0] || {} }),
-        defaultValue: 'value',
-    },
-    showGrid: {
-        label: { en: 'Show Y-axis Grid' },
-        type: 'OnOff',
-        section: 'settings',
-        defaultValue: true,
-    },
-    showTooltip: {
-        label: { en: 'Show Tooltip' },
-        type: 'OnOff',
-        section: 'settings',
-        defaultValue: true,
-    },
-    backgroundColor: {
-      label: { en: 'Background Color' },
-      type: 'Color',
-      section: 'style',
+    streamingText: {
+      label: {
+        en: 'Streaming Text'
+      },
+      type: 'Text',
+      section: 'settings',
+      defaultValue: '',
       bindable: true,
-      defaultValue: '#1e293b',
+      hidden: (content) => !content.isStreaming,
     },
-    titleColor: {
-      label: { en: 'Title Color' },
-      type: 'Color',
-      section: 'style',
+    placeholderText: {
+      label: {
+        en: 'Placeholder text'
+      },
+      type: 'Text',
+      section: 'settings',
+      defaultValue: 'Message Gemini',
+      bindable: true
+    },
+    disabled: {
+      label: {
+        en: 'Disabled'
+      },
+      type: 'OnOff',
+      section: 'settings',
+      defaultValue: false,
+      bindable: true
+    },
+    userLabel: {
+      label: {
+        en: 'User Label'
+      },
+      type: 'Text',
+      section: 'settings',
+      defaultValue: 'You',
+      bindable: true
+    },
+    assistantLabel: {
+      label: {
+        en: 'Assistant Label'
+      },
+      type: 'Text',
+      section: 'settings',
+      defaultValue: 'Assistant',
+      bindable: true
+    },
+    allowAttachments: {
+      label: {
+        en: 'Allow attachments'
+      },
+      type: 'OnOff',
+      section: 'settings',
+      defaultValue: true,
+      bindable: true
+    },
+    autoScrollBehavior: {
+      label: {
+        en: 'Auto-scroll behavior'
+      },
+      type: 'Text',
+      section: 'settings',
+      defaultValue: 'smooth',
+      options: [{
+        value: 'smooth',
+        label: {
+          en: 'Smooth'
+        }
+      }, {
+        value: 'instant',
+        label: {
+          en: 'Instant'
+        }
+      }],
+      bindable: true
+    },
+    availableTools: {
+      label: {
+        en: 'Available Tools'
+      },
+      type: 'Array',
+      section: 'settings',
+      defaultValue: [
+        { id: 'calendar', name: 'Google Calendar', description: 'Access your calendar events', icon: '📅', disabled: false },
+        { id: 'keep', name: 'Google Keep', description: 'Access your notes', icon: '🗒️', disabled: false },
+        { id: 'tasks', name: 'Google Tasks', description: 'Manage your tasks', icon: '✓', disabled: false }
+      ],
       bindable: true,
-      defaultValue: '#f1f5f9',
+      options: {
+        item: {
+          type: 'Object',
+          defaultValue: {
+            id: '',
+            name: '',
+            description: '',
+            icon: '',
+            disabled: false
+          }
+        }
+      }
     },
-    barColor: {
-      label: { en: 'Bar Color' },
-      type: 'Color',
-      section: 'style',
+    enableMentions: {
+      label: {
+        en: 'Enable mentions'
+      },
+      type: 'OnOff',
+      section: 'settings',
+      defaultValue: true,
+      bindable: true
+    },
+    showToolsButton: {
+      label: {
+        en: 'Show tools button'
+      },
+      type: 'OnOff',
+      section: 'settings',
+      defaultValue: true,
+      bindable: true
+    },
+    maxAttachmentSize: {
+      label: {
+        en: 'Max attachment size (bytes)'
+      },
+      type: 'Number',
+      section: 'settings',
+      defaultValue: 10485760,
+      bindable: true
+    },
+    allowedFileTypes: {
+      label: {
+        en: 'Allowed file types'
+      },
+      type: 'Array',
+      section: 'settings',
+      defaultValue: ['image/*', 'application/pdf', '.doc', '.docx', '.txt'],
       bindable: true,
-      defaultValue: '#3b82f6',
-    },
-    barHoverColor: {
-      label: { en: 'Bar Hover Color' },
-      type: 'Color',
-      section: 'style',
-      bindable: true,
-      defaultValue: '#60a5fa',
-    },
-    barRadius: {
-        label: { en: 'Bar Corner Radius'},
-        type: 'Number',
-        section: 'style',
-        defaultValue: 4,
-    },
-    gridColor: {
-      label: { en: 'Grid Line Color' },
-      type: 'Color',
-      section: 'style',
-      bindable: true,
-      defaultValue: '#334155',
-    },
-    axisLabelColor: {
-      label: { en: 'Axis Label Color' },
-      type: 'Color',
-      section: 'style',
-      bindable: true,
-      defaultValue: '#94a3b8',
-    },
-    tooltipBackgroundColor: {
-      label: { en: 'Tooltip BG Color' },
-      type: 'Color',
-      section: 'style',
-      bindable: true,
-      defaultValue: '#0f172a',
-    },
-    tooltipTextColor: {
-      label: { en: 'Tooltip Text Color' },
-      type: 'Color',
-      section: 'style',
-      bindable: true,
-      defaultValue: '#f1f5f9',
-    },
-  },
+      options: {
+        item: {
+          type: 'Text'
+        }
+      }
+    }
+  }
 };

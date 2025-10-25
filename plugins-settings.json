@@ -1,4 +1,20 @@
 {
+    "832d6f7a-42c3-43f1-a3ce-9a678272f811": {
+        "id": "937ff652-78ee-407c-86ee-d9a3602619e6",
+        "name": "Date",
+        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
+        "pluginId": "832d6f7a-42c3-43f1-a3ce-9a678272f811",
+        "publicData": {
+            "favoriteFormat": "2025-10-18T11:37:57.548Z"
+        }
+    },
+    "d66a250d-8468-469e-ad33-ee028f632398": {
+        "id": "a287d4a7-7596-48a0-b0e1-ff67671ce429",
+        "name": "OpenAI",
+        "designId": "a91327e9-0bae-46f5-a5f8-42d56d15d3f7",
+        "pluginId": "d66a250d-8468-469e-ad33-ee028f632398",
+        "publicData": {}
+    },
     "60610cfd-fa28-4fc1-9e72-088b5c667e81": {
         "id": "e08f507c-58b9-4abf-9434-c2df93a2506c",
         "name": "Calendly",
@@ -38,6 +54,12 @@
         "publicData": {
             "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
             "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co",
+            "environments": {
+                "production": {
+                    "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzbmtvdGxhaG11YmFpdHBrY25lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2NzY2NTEsImV4cCI6MjA2NjI1MjY1MX0.tR_77C9muHzsI8761lLjACKDxB8WZ9VvAtAYBTgJsUc",
+                    "projectUrl": "https://fsnkotlahmubaitpkcne.supabase.co"
+                }
+            },
             "realtimeTables": {
                 "messages": true,
                 "conversations": true,
